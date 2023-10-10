@@ -1,33 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bentham&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="css/events.css" />
+    <title>Community Events – Join The Conversation</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
-        <title>Community Events – Join The Conversation</title>
-    </head>
+  <body>
+    <header>
+      <div>
+        <img src="./images/website-logos/logo.svg" alt="" />
+        <span>Algorithmia SE 🌍</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home Page</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./events.html">Events</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <button>Join Us</button>
+        </ul>
+      </nav>
+    </header>
+    <div class="event-container">
+      <div class="upcoming-events">
+        <h1>Upcoming Events</h1>
+        <div class="upcoming-carousel">
+            <div class="upcoming-carousel-prev">&#9664;</div>
+            <input class="carousel-1" type="radio" name="carousel" id="carousel-1" checked>
+            <input class="carousel-2" type="radio" name="carousel" id="carousel-2">
+            <input class="carousel-3" type="radio" name="carousel" id="carousel-3">
+            <input class="carousel-4" type="radio" name="carousel" id="carousel-4">
 
-    <body>
-        <header>
-            <div>
-                <img src="./images/website-logos/logo.svg" alt="">
-                <span>Algorithmia SE 🌍</span>
+            <div
+            class="upcoming-carousel-wrapper">
+              <div class="upcoming-carousel-item">
+                <img src="images/events/image_1.png" alt="A man with an headphone attending a virtual event" />
+                <h3>Twitter Space Event</h3>
+                <h4></h4>
+                <p>Get ready for an interactive and engaging experience as we take to Twitter Spaces for an upcoming event that's all about connection and conversation. Here's a sneak peek at what you can expect: Live Discussions, Meet the Experts, Interactive Q&A.</p>
+                <button>Learn more</button>
+                </div>
+              <div class="upcoming-carousel-item">
+                <img src="images/events/image_1.png" alt="A man with an headphone attending a virtual event" />
+                <h3>Game Development Hackathon</h3>
+                <p>Get ready for an interactive and engaging experience as we take to Twitter Spaces for an upcoming event that's all about connection and conversation. Here's a sneak peek at what you can expect: Live Discussions, Meet the Experts, Interactive Q&A.</p>
+                <button>Learn more</button>
+              </div>
+              <div class="upcoming-carousel-item">
+                <img src="images/events/image_1.png" alt="A man with an headphone attending a virtual event" />
+                <h3>Social App (Students)</h3>
+                <p>Get ready for an interactive and engaging experience as we take to Twitter Spaces for an upcoming event that's all about connection and conversation. Here's a sneak peek at what you can expect: Live Discussions, Meet the Experts, Interactive Q&A.</p>
+                <button>Learn more</button>
+              </div>
+              <div class="upcoming-carousel-item">
+                <img src="images/events/twitter_space.png" alt="A man with an headphone attending a virtual event" />
+                <h3>Twitter Space Event</h3>
+                <p>Get ready for an interactive and engaging experience as we take to Twitter Spaces for an upcoming event that's all about connection and conversation. Here's a sneak peek at what you can expect: Live Discussions, Meet the Experts, Interactive Q&A.</p>
+                <button>Learn more</button></div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home Page</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                        <li><a href="./events.html">Events</a></li>
-                        <li><a href="./contact.html">Contact Us</a></li>
-                    <button>Join Us</button>
-                </ul>
-            </nav>
-        </header>
-    </body>
-
+            <div class="upcoming-carousel-next">&#9654;</div>
+      </div>
+      <div class="latest-events"></div>
+      <div class="past-events"></div>
+    </div>
+  </body>
 </html>

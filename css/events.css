@@ -1,1 +1,81 @@
 /* ======================== CSS file for events.html ======================== */
+body {
+  background-color: #07303e;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.upcoming-carousel {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.upcoming-carousel-wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.upcoming-carousel-item {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 10px;
+  /* background-color: #fff; */
+  /* border: 1px solid #ccc; */
+  margin: 5px 5px 5px;
+}
+
+/*left and right navigation buttons */
+.upcoming-carousel-prev,
+.upcoming-carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 20px;
+  marg
+}
+
+.upcoming-carousel-prev {
+  left: 0;
+}
+
+.upcoming-carousel-next {
+  right: 0;
+}
+
+.upcoming-carousel-item button {
+  background-color: #ff7b1b;
+  border-radius: 30px;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.upcoming-carousel-item button:hover {
+    background-color: #ac6911;
+  }
+
+.upcoming-carousel-item:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 10px #ff7b1b;
+}
+
+.upcoming-events h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Bentham;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
