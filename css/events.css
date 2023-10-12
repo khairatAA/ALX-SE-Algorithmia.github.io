@@ -40,7 +40,6 @@ a {
   background-color: #333;
   color: #fff;
   border-radius: 20px;
-  marg
 }
 
 .upcoming-carousel-prev {
@@ -62,8 +61,8 @@ a {
 }
 
 .upcoming-carousel-item button:hover {
-    background-color: #ac6911;
-  }
+  background-color: #ac6911;
+}
 
 .upcoming-carousel-item:hover {
   transform: scale(1.1);
@@ -78,4 +77,62 @@ a {
   font-weight: 600;
   color: #fff;
   text-shadow: 2px 2px 4px #000;
+}
+
+/* ======== Past Events ======== */
+.past-events h3 {
+  font-size: 48px;
+  text-align: center;
+  padding: 24px 0px;
+}
+
+/* card */
+
+.card_container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next row on smaller screens */
+  justify-content: center; /* Center align cards horizontally */
+}
+
+.card {
+  width: 340px; /* Initial width */
+  height: auto; /* Maintain aspect ratio */
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card_info {
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: left;
+  font-size: 16px;
+  color: #e6dff3;
+}
+
+.card_title {
+  font-size: 24px;
+  padding-top: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* button */
+
+.button {
+  background-color: #ff7b1b;
+  padding: 16px;
+  border-radius: 24px;
+  color: white;
+  text-align: center;
+  width: 80px;
+  height: 20px;
+  margin-top: 32px;
 }
