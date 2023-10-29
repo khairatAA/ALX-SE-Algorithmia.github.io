@@ -1,357 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- HEAD SECTION -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- NanaAba - Home Page Logo -->
+    <!-- Corrected path -->
     <link
       rel="icon"
-      href="images/website-logos//index-logo.jpg"
+      href="images/website-logos/index-logo.jpg"
       type="image/jpg"
     />
 
-    <!-- Linking CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!--Linking Bentham Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Bentham&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Linking Iconscout CDN -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
 
-    <!-- Title of Home Page-->
+    <!-- Title of the website -->
     <title>Algorithmia SE 🌍</title>
+  </head>
 
-    <!-- Styles for Footer -->
-    <!--
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        -->
+  <body>
+    <!-- Body of the website -->
 
-    <!--  Body of the website -->
-    <body>
-      <!-- chykB - Header File -->
-      <header>
-        <div>
-          <!-- Add Logo and Header Text -->
+    <!-- linear gradient -->
+    <div class="header-background"></div>
+    <!-- NAVIGATION BAR GOES HERE!!!! -->
+    <header>
+      <div class="responsiveness">
+        <div class="logo">
           <img src="./images/website-logos/logo.svg" alt="" />
           <span>Algorithmia SE 🌍</span>
         </div>
+        <!-- For responsiveness -->
+        <div>
+          <i id="menu-bar" class="fas fa-bars"></i>
+        </div>
+      </div>
+      <nav class="nav-container">
+        <ul>
+          <li class="nav-list">
+            <a href="./index.html" id="home"><span>Home</span></a>
+          </li>
+          <li class="nav-list"><a href="#About_us">About Us</a></li>
+          <li class="nav-list"><a href="#Contact_us">Contact Us</a></li>
+          <li class="nav-list"><a href="./projects.html">Projects</a></li>
 
-        <!-- Add links to other pages -->
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home Page</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./events.html">Events</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
-            <button>Join Us</button>
-            <!-- Google Form Link: https://forms.gle/21nWu7QqVe3NvR3XA -->
-          </ul>
-        </nav>
-      </header>
-      <!-- Samuel and emycodes - Hero Section -->
-      <div id="hero-section">
-        <h1>Welcome to Algorithmia SE 🌍</h1>
-        <p>Coding The Future, Bringing Ideas Into Reality</p>
+          <li class="nav-list dropdown">
+            <a href="./events.html">Events</a>
+            <ul class="dropdown-content">
+              <li><a href="#upcoming-events">Upcoming Events</a></li>
+              <li><a href="#latest-events">Latest Events</a></li>
+              <li><a href="#past-events">Past Events</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-list"><a href="./blogs.html">Blogs</a></li>
+          <button>
+            <a href="https://forms.gle/ojo9Yi3xM8mbaZ4HA" target="_blank"
+              >Join Us</a
+            >
+          </button>
+        </ul>
+      </nav>
+    </header>
+    <!-- NAVIGATION BAR ENDS HERE!!!! -->
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <h1>Welcome to Algorithmia SE 🌍</h1>
+      <h2 class="hero-main-header">
+        Coding The Future, Bringing Ideas Into Reality
+      </h2>
+      <p class="hero-text">
+        Our expanding consortium of ALX Software Engineering students,
+        representing all cohorts, is fervently committed to transforming
+        innovative ideas into reality and fearlessly conquering real-life
+        challenges.
+      </p>
+      <button class="join-consortium">
+        <a href="https://forms.gle/ojo9Yi3xM8mbaZ4HA" target="_blank"
+          >Join Our Consortium</a
+        >
+      </button>
+    </div>
+
+    <!-- alx-se_style -->
+    <div id="alx-se_style">
+      <img src="images/home/trailblaze.jpg" width="350" height="auto" />
+      <div id="texts">
+        <h3 class="sub-heading">
+          Algorithmia SE 🌍 : Trailblazing Tech Excellence, ALX SE Style
+        </h3>
         <p>
-          Our expanding consortium of ALX Software Engineering students,
-          representing all cohorts, is fervently committed to transforming
-          innovative ideas into reality and fearlessly conquering real-life
-          challenges.
+          Algorithmia SE 🌍 is not just a community; it’s a thriving ecosystem
+          where the synergy of SE students from diverse cohorts converge to
+          reshape the very essence of Software Engineering.
         </p>
-        <button id="join-consortium">Join Our Consortium</button>
       </div>
+    </div>
+    <!-- end of alx-se_style -->
 
-      <!--  martyofmca and mubarak1A - Our Journey-->
-      <div class="our_journey">
-        <div class="our_journey--text">
-          <h2>Our Journey</h2>
-          <p>
-            Daniel Dohou, of cohort 17, founded Algorithmia SE 🌍, an
-            open-source organization built mainly for ALX Software Engineering
-            program students. Our main goal is to build real-life solutions as
-            ALX SE students collaboratively. This will help to develop our
-            problem-solving skills and be more than just software engineers.
-          </p>
-        </div>
-        <div class="our_journey--image">
-          <img src="./images/home/daniel_image.png" alt="Daniel Dohou" />
-        </div>
+    <!-- Our Journey-->
+    <div class="our_journey" id="About_us">
+      <div class="texts">
+        <h3 class="sub-heading">Our Journey</h3>
+        <p>
+          Daniel Dohou, of cohort 17, founded Algorithmia SE 🌍, an open-source
+          organization built mainly for ALX Software Engineering program
+          students. Our main goal is to build real-life solutions as ALX SE
+          students collaboratively. This will help to develop our
+          problem-solving skills and be more than just software engineers.
+        </p>
       </div>
+      <div class="our_journey--image">
+        <!--resized the image-->
+        <img
+          src="./images/home/daniel_image.png"
+          alt="Daniel Dohou"
+          width="350px"
+          height="auto"
+        />
+      </div>
+    </div>
 
-      <!-- Adams2004 - The Algorithmian Difference -->
-      <h1>The Algorithmian Difference 🌱</h1>
+    <div class="algorithimia-diff">
+      <!-- The Algorithmian Difference -->
+      <h1>The Algorithmian Difference🌱</h1>
       <p>
-        <br />
         Algorithmia SE is uniquely driven by ALX Software Engineering
         students,fostering innovation and collaboration. It provides a platform
         for students to tackle real-world challenges, promoting problem-solving
         and entrepreneurship.
       </p>
 
-      <!-- SamuelWorld20 - Mission and Vision -->
-      <!--
-                <style>
-                    .card {
-                        height: 470px;
-                        background-color: white;
-                        margin: 10px;
-                        display: inline-block;
-                        border-radius: 20px;
-                    }
+      <div class="mission-vision">
+        <!-- Mission and Vision -->
+        <div class="card mission">
+          <h2>Our Mission</h2>
+          <p>
+            Our mission is clear - To foster a resilient and inclusive community
+            of ALX SE students, spanning all levels of expertise, united in the
+            pursuit of collaboratively crafting groundbreaking solutions that
+            address real-world challenges.
+          </p>
+          <br /><br />
+          <img src="images/home/mission.jpg" width="370" height="192" />
+        </div>
 
-                    .card h2 {
-                        font-family: Bentham;
-                        font-size: 2rem;
-                        font-weight: 600;
-                        /* margin: 0 0 1rem 0; */
-                        color: #fff;
-                    }
+        <div class="card vision">
+          <h2>Our Vision</h2>
+          <p>
+            Envisioning a future where Algorithmia SE 🌍 emerges as a highly
+            respected open-source GitHub organization that fosters a resilient
+            tapestry of collaboration within the ALX Software Engineering
+            community. This tapestry, woven by learners of diverse levels,
+            threads together shared purpose, contributing knowledge, and
+            collectively crafting groundbreaking solutions that shape a better
+            world.
+          </p>
+          <br />
+          <img src="images/home/vision_frame.png" width="370" height="192" />
+        </div>
+      </div>
+    </div>
 
-                    .card p {
-                        font-size: 16px;
-                        /* margin: 0 0 1rem 0; */
-                        font-family: Bentham;
-                        color: #fff;
-                    }
-                </style>
-                -->
-      <div>
-        <!--div class="card" style="text-align: center; background-color: #212121; width: 465px;"-->
-        <br />
-        <h2>Our Mission</h2>
-        <p>
-          Our mission is clear - To foster a resilient and inclusive community
-          of ALX SE students, spanning all levels of expertise, united in the
-          pursuit of collaboratively crafting groundbreaking solutions that
-          address real-world challenges.
-        </p>
-        <br /><br />
-        <img src="images/home/lady_frame.png" width="450" height="225" />
+    <!-- Add Goals Section -->
+    <div class="goals-section">
+      <div class="head">
+        <h2 class="goal-header">Goals</h2>
+        <h3 class="goal-sub-header">
+          - Coding the Future, Bringing Ideas into Reality -
+        </h3>
       </div>
 
-      <div>
-        <!-- div class="card" style="text-align: center; background-color: #FF7B1B; width: 530px;-->
-        <br />
-        <h2>Our Vision</h2>
-        <p>
-          Envisioning a future where Algorithmia SE 🌍 emerges as a highly
-          respected open-source GitHub organization that fosters a resilient
-          tapestry of collaboration within the ALX Software Engineering
-          community. This tapestry, woven by learners of diverse levels, threads
-          together shared purpose, contributing knowledge, and collectively
-          crafting groundbreaking solutions that shape a better world.
-        </p>
-        <br /><br />
-        <img src="images/home/vision_frame.png" width="370" height="195" />
+      <div class="goals-container">
+        <div class="goal">
+          <img
+            class="goal-img"
+            src="./images/home/goals_1.jpg"
+            alt="thumbnail"
+          />
+          <h4 class="goal-title">Diverse Collaboration</h4>
+          <p class="goal-summary">
+            Fostering a collaborative environment where ALX SE students of
+            varying backgrounds come together to innovate.
+          </p>
+        </div>
+        <div class="goal">
+          <img
+            class="goal-img"
+            src="./images/home/goals_2.jpg"
+            alt="thumbnail"
+          />
+          <h4 class="goal-title">Knowledge Sharing</h4>
+          <p class="goal-summary">
+            Cultivating a culture of knowledge sharing through tech talks,
+            blogs, and documentation.
+          </p>
+        </div>
+        <div class="goal">
+          <img
+            class="goal-img"
+            src="./images/home/goals_3.jpg"
+            alt="thumbnail"
+          />
+          <h4 class="goal-title">Impactful Projects</h4>
+          <p class="goal-summary">
+            Driving impactful open-source projects that address real-world
+            challenges.
+          </p>
+        </div>
+        <div class="goal">
+          <img
+            class="goal-img"
+            src="./images/home/goals_4.jpg"
+            alt="thumbnail"
+          />
+          <h4 class="goal-title">Open Source Advocacy</h4>
+          <p class="goal-summary">
+            Promoting open-source principles through code contributions and
+            transparency.
+          </p>
+        </div>
+        <div class="goal">
+          <img
+            class="goal-img"
+            src="./images/home/goals_5.jpg"
+            alt="thumbnail"
+          />
+          <h4 class="goal-title">Global Impact</h4>
+          <p class="goal-summary">
+            Extending our influence beyond our local community by collaborating
+            with other open-source initiatives.
+          </p>
+        </div>
+        <div class="goal">
+          <img
+            class="goal-img"
+            src="./images/home/goals_6.png"
+            alt="thumbnail"
+          />
+          <h4 class="goal-title">Skill Enhancement</h4>
+          <p class="goal-summary">
+            Empowering members to enhance their software engineering skills
+            through hands-on learning and mentorship.
+          </p>
+        </div>
       </div>
-      <!-- dprofCode - Add Goals Section -->
-      <main>
-        <section>
-          <div class="goals-section">
-            <h2 class="goal-header">Goals</h2>
-            <h3 class="goal-sub-header">
-              - Coding the Future, Bringing Ideas into reality -
-            </h3>
-            <div class="goals-container">
-              <div class="goal">
-                <img
-                  class="goal-img"
-                  src="./images/home/goals_1.png"
-                  alt="thumbnail"
-                />
-                <h4 class="goal-title">Diverse Collaboration</h4>
-                <p class="goal-summary">
-                  Fostering a collaborative environment where ALX SE students of
-                  varying backgrounds come together to innovate.
-                </p>
-              </div>
-              <div class="goal">
-                <img
-                  class="goal-img"
-                  src="./images/home/goals_2.png"
-                  alt="thumbnail"
-                />
-                <h4 class="goal-title">Knowledge Sharing</h4>
-                <p class="goal-summary">
-                  Cultivating a culture of knowledge sharing through tech talks,
-                  blogs, and documentation.
-                </p>
-              </div>
-              <div class="goal">
-                <img
-                  class="goal-img"
-                  src="./images/home/goals_3.png"
-                  alt="thumbnail"
-                />
-                <h4 class="goal-title">Impactful Projects</h4>
-                <p class="goal-summary">
-                  Driving impactful open-source projects that address real-world
-                  challenges.
-                </p>
-              </div>
-              <div class="goal">
-                <img
-                  class="goal-img"
-                  src="./images/home/goals_4.png"
-                  alt="thumbnail"
-                />
-                <h4 class="goal-title">Open Source Advocacy</h4>
-                <p class="goal-summary">
-                  Promoting open-source principles through code contributions
-                  and transparency.
-                </p>
-              </div>
-              <div class="goal">
-                <img
-                  class="goal-img"
-                  src="./images/home/goals_5.png"
-                  alt="thumbnail"
-                />
-                <h4 class="goal-title">Global Impact</h4>
-                <p class="goal-summary">
-                  Extending our influence beyond our local community by
-                  collaborating with other open-source initiatives.
-                </p>
-              </div>
-              <div class="goal">
-                <img
-                  class="goal-img"
-                  src="./images/home/goals_6.png"
-                  alt="thumbnail"
-                />
-                <h4 class="goal-title">Skill Enhancement</h4>
-                <p class="goal-summary">
-                  Empowering members to enhance their software engineering
-                  skills through hands-on learning and mentorship.
-                </p>
-              </div>
+    </div>
+
+    <!-- Contact Us Form (HTML) -->
+    <div class="contact-section" id="Contact_us">
+      <h1>Contact <b>Us</b></h1>
+      <p>
+        Ready to build real-life solutions as ALX SE students collaboratively?
+        <br />
+        Reach out to us
+      </p>
+      <form action="https://formspree.io/f/mrgwjrej" method="POST" target="_blank">
+        <div class="contact-details">
+          <div class="name">
+            <div class="first-name">
+              <label>First name</label> <br />
+              <input
+                type="text"
+                class="input1"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
+            <div class="last-name">
+              <label>Last name</label> <br />
+              <input
+                type="text"
+                class="input1"
+                placeholder="Enter your last name"
+                required
+              />
             </div>
           </div>
-        </section>
-      </main>
 
-      <!-- Contact Us Form (HTML) -->
-      <!-- Formspree.io -->
-      <!-- Suscribing -->
-
-      <!-- TechDanny - Add Footer Section -->
-      <footer>
-        <!--footer style="position: fixed;bottom: 0;"-->
-        <table>
-          <tr>
-            <td>
-              <img
-                src="./images/website-logos/logo.svg"
-                width="50px"
-                alt="Algorithmia SE logo"
+          <div class="contact">
+            <div class="email">
+              <label>Email</label> <br />
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+                name="email"
+                required
               />
-            </td>
-            <td>Quick Links</td>
-          </tr>
-          <tr>
-            <td>
-              Algorithmia SE 🌍 represents an inspiring convergence of
-              innovation,<br />collaboration, and transformation impact. It
-              illuminates the path for<br />ALX Software Engineering students,
-              and the wider tech community,<br />fostering a culture of
-              continuous learning, problem-solving, <br />and positive change.
-            </td>
-            <td>
-              <ul style="list-style-type: none">
-                <li>Homepage</li>
-                <li>Projects</li>
-                <li>Events</li>
-              </ul>
-            </td>
-            <td>
-              <ul style="list-style-type: none">
-                <li>About Us</li>
-                <li>Contact Us</li>
-                <li>Blogs</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>+234 8139-720259</td>
-          </tr>
-          <tr>
-            <td>algorithmiasecollaborators@gmail.com</td>
-          </tr>
-        </table>
-        <hr />
-        <table>
-          <tr>
-            <td>
-              <ul style="list-style: none">
-                <li>
-                  <a
-                    href="https://github.com/ALX-SE-Algorithmia"
-                    target="_blank"
-                  >
-                    <i class="uil uil-github"></i>
-                  </a>
-                  <a href="https://twitter.com/Algorithmia_SE" target="_blank">
-                    <i class="uil uil-twitter"></i>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/algorithmia-se-0743b9283/"
-                    target="_blank"
-                  >
-                    <i class="uil uil-linkedin"></i>
-                  </a>
-                  <a href="https://discord.gg/xgEsBQBRp3" target="_blank">
-                    <i class="uil uil-discord"></i>
-                  </a>
-                  <a
-                    href="https://whatsapp.com/channel/0029Va5SC3G9sBIFUjjzNl1c"
-                    target="_blank"
-                  >
-                    <i class="uil uil-whatsapp"></i>
-                  </a>
-                  <a
-                    href="mailto:algorithmiasecollaborators@gmail.com"
-                    target="_blank"
-                  >
-                    <i class="uil uil-envelope"></i>
-                  </a>
-                  <a
-                    href="https://www.youtube.com/@Algorithmia_SE"
-                    target="_blank"
-                  >
-                    <i class="uil uil-youtube"></i>
-                  </a>
-                </li>
-              </ul>
-            </td>
-            <td>
-              <p>
-                A product of
-                <img
-                  src="./images/website-logos/logo.svg"
-                  width="30px"
-                  alt="Algorithmia_SE"
-                />
-              </p>
-            </td>
-            <td>
-              <p>&copy; 2023 Algorithmia SE. All Rights Reserved.</p>
-            </td>
-          </tr>
-        </table>
-      </footer>
-    </body>
-  </head>
+            </div>
+            <div class="number">
+              <label>Phone number</label> <br />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+              />
+              <!--  pattern="[0-9]{20}" -->
+            </div>
+          </div>
+        </div>
+
+        <div class="input-text">
+          <label>What would you like to tell us</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Drop a message..."
+            cols="75%"
+            rows="10%"
+            required
+          ></textarea>
+        </div>
+
+        <button class="button">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Subscribing to newsletter -->
+    <div class="subscribe-container">
+      <img src="./images/home/email.svg" alt="" width="80px" height="auto" />
+      <h2>Subscribe to Our Newsletter</h2>
+      <h1>Subscribe to our newsletter and join our community of innovators</h1>
+
+      <a
+        href="https://algorithmiasecollaborators.hashnode.dev/newsletter"
+        target="_blank"
+        ><button>Subscribe</button></a
+      >
+    </div>
+    <!-- end of Subscribing -->
+
+    <footer>
+      <!--footer style="position: fixed;bottom: 0;"-->
+      <div class="top">
+        <div class="left">
+          <img
+            src="./images/website-logos/logo.svg"
+            width="50px"
+            alt="Algorithmia SE logo"
+          />
+          <p>
+            Algorithmia SE 🌍 represents an inspiring convergence of innovation,
+            collaboration, and transformation impact. It illuminates the path
+            for ALX Software Engineering students, and the wider tech community,
+            fostering a culture of continuous learning, problem-solving, and
+            positive change.
+          </p>
+          <br />
+          <p><a href="tel:+2348139720259">+234-81-3972-0259</a></p>
+          <p>
+            <a href="mailto:algorithmiasecollaborators@gmail.com"
+              >algorithmiasecollaborators@gmail.com</a
+            >
+          </p>
+        </div>
+
+        <div class="right">
+          <h3>Quick Links</h3>
+          <div class="links">
+            <ul style="list-style-type: none">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./events.html">Events</a></li>
+              <li><a href="#Contact_us">Contact Us</a></li>
+            </ul>
+
+            <ul style="list-style-type: none">
+              <li><a href="#About_us">About Us</a></li>
+              <li><a href="./projects.html">Projects</a></li>
+              <li><a href="./blogs.html">Blogs</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="under">
+        <ul style="list-style: none">
+          <li>
+            <a href="https://github.com/Algorithmia-SE" target="_blank">
+              <i class="uil uil-github"></i>
+            </a>
+            <a href="https://twitter.com/Algorithmia_SE" target="_blank">
+              <i class="uil uil-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/algorithmia-se-0743b9283/"
+              target="_blank"
+            >
+              <i class="uil uil-linkedin"></i>
+            </a>
+            <a href="https://discord.gg/xgEsBQBRp3" target="_blank">
+              <i class="uil uil-discord"></i>
+            </a>
+            <a
+              href="https://whatsapp.com/channel/0029Va5SC3G9sBIFUjjzNl1c"
+              target="_blank"
+            >
+              <i class="uil uil-whatsapp"></i>
+            </a>
+            <a
+              href="mailto:algorithmiasecollaborators@gmail.com"
+              target="_blank"
+            >
+              <i class="uil uil-envelope"></i>
+            </a>
+            <a href="https://www.youtube.com/@Algorithmia_SE" target="_blank">
+              <i class="uil uil-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="footer_product">
+          A product of
+          <img
+            src="./images/website-logos/logo.svg"
+            width="30px"
+            height="auto"
+            alt="Algorithmia SE logo"
+          />
+        </div>
+        <div class="copyright">
+          &copy; 2023 Algorithmia SE 🌍. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <div class="scrolltotop" onclick="scrolltop()">
+      <i class="fa-solid fa fa-arrow-up"></i>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
